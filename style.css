@@ -44,7 +44,7 @@ header {
 }
 
 header img {
-    border-radius: 20%;
+    border-radius: 50%;
     width: 30%;
     transition: width 1s;
     border: var(--border-color) 3px solid;
@@ -122,6 +122,10 @@ nav a {
     padding: 2% 2%;
 }
 
+.section-container section h2 {
+    padding-bottom: 2%;
+}
+
 .aboutMe {
     padding-top: 1%;
 }
@@ -142,11 +146,14 @@ nav a {
 }
 
 footer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10%;
     background-color: rgba(0, 0, 0, 0.692);
+
+    bottom: 0px;
+    margin-top: 5%;
     padding: 20px;
 }
 

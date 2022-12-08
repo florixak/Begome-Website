@@ -1,6 +1,7 @@
 window.onload = function() {
     footer();
     followersMsg();
+    schedule();
 };
 
 function footer() {
@@ -15,4 +16,13 @@ function followersMsg() {
     var text = document.getElementById("followers");
 
     text.title = "Sledující ještě nejsou automatický, ale pracuje se na tom."
+}
+
+function schedule() {
+    const d = new Date();
+    const weekday = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+    let day = d.getDay()
+
+    document.getElementById("monday").innerHTML = weekday[day];
+    
 }
