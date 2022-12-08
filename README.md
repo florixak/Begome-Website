@@ -1,2 +1,2 @@
 # Begome's website
-# His twitch channel: www.twitch.tv/cptbegome
+# Twitch channel: www.twitch.tv/cptbegome
