@@ -126,6 +126,11 @@ nav a {
     padding-bottom: 2%;
 }
 
+.section-container img {
+    width: 48px;
+    left: 0;
+}
+
 .aboutMe {
     padding-top: 1%;
 }
