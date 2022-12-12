@@ -9,6 +9,7 @@ function footer() {
     var year = d.getFullYear();
 
     document.getElementById("streamer").innerHTML = "© <b>Begome</b> " + year;
+    // document.getElementById("creator").innerHTML = "Vytvořil <b>FloriXak</b>";
     document.getElementById("creator").innerHTML = "Vytvořil <a href='https://www.florixak.tk/'><b>FloriXak</b></a>";
 }
 

@@ -1,7 +1,7 @@
 :root {
     --background-red: rgb(121, 32, 32);
     --background-black: rgb(0, 0, 0);
-    --text-color: rgba(255, 255, 255, 0.9);;
+    --text-color: white;
     --border-color: rgba(255, 255, 255, 0.692);
 }
 
@@ -12,8 +12,7 @@
 }
 
 body {
-    background: linear-gradient(to right, var(--background-red), var(--background-black), var(--background-red)) no-repeat;
-    /* background: linear-gradient(to right, var(--background-black), var(--background-red), var(--background-black)) no-repeat; */
+    background: linear-gradient(var(--background-black), var(--background-red)) no-repeat;
     height: 100%;
     background-attachment: fixed;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -48,6 +47,7 @@ header img {
     border-radius: 50%;
     width: 30%;
     transition: width 1s;
+    border: var(--border-color) 3px solid;
 }
 
 header img:hover {
@@ -61,7 +61,7 @@ header h1 {
 }
 
 nav {
-    margin: 2%;
+    margin: 1%;
     font-size: 140%;
 }
 
@@ -91,16 +91,14 @@ nav li::after {
 
 nav li:hover:after {
     width: 82%;
+
 }
 
 nav a {
-    /*background: linear-gradient(to right, var(--background-black), var(--background-red));*/
-    
+    background: linear-gradient(var(--background-black), var(--background-red));
     padding: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
 
-    /*border: var(--border-color) 1px solid;*/
+    border: var(--border-color) 3px solid;
     border-radius: 12px;
 
     color: var(--text-color);
@@ -116,20 +114,12 @@ nav a {
 .section-container section {
     flex: 1;
 
-    /* background: linear-gradient(var(--background-black), var(--background-red));*/
+    background: linear-gradient(var(--background-black), var(--background-red));
+    border: var(--border-color) 3px solid;
     border-radius: 12px;
 
     margin: 2% 2%;
     padding: 2% 2%;
-}
-
-
-.section-1, .section-3 {
-    background: linear-gradient(to left, var(--background-black), var(--background-red));
-}
-
-.section-2, .section-4 {
-    background: linear-gradient(to right, var(--background-black), var(--background-red));
 }
 
 .under-text {
@@ -180,7 +170,7 @@ footer a {
     font-weight: bold;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 650px) {
 
     header img {
         width: 60%;
@@ -200,16 +190,6 @@ footer a {
 
     .section-container-2 {
         flex-direction: column;
-    }
-
-    .section-1, .section-3 {
-        margin-left: 0;
-        background: linear-gradient(to right, var(--background-red), var(--background-black), var(--background-red));
-    }
-    
-    .section-2, .section-4 {
-        margin-left: 0;
-        background: linear-gradient(to right, var(--background-red), var(--background-black), var(--background-red)) no-repeat;
     }
 
 }
